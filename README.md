@@ -33,8 +33,8 @@ This project is developed using a structured milestone plan.
 ## Milestone 0 — Core Player + Game Shell
 - [x] New C++ UE5 project + Git setup  
 - [x] Custom `FactoryGameMode`  
-- [ ] Custom `FactoryPlayerController`  
-- [ ] Custom `FactoryCharacter`  
+- [x] Custom `FactoryPlayerController`  
+- [x] Custom `FactoryCharacter`  
 - [ ] Basic HUD showing current mode  
 
 ## Milestone 1 — Grid + Simple Building Placement

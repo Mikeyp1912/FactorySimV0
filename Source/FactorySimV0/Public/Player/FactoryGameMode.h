@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Player/FactoryGameMode.h
 
 #pragma once
 
@@ -14,8 +14,8 @@ class FACTORYSIMV0_API AFactoryGameMode : public AGameModeBase
 {
 	GENERATED_BODY()
 
-public:
-	AFactoryGameMode();
+//public:
+	//AFactoryGameMode();
 	
 protected:
 	virtual void BeginPlay() override;
