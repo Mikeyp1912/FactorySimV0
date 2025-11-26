@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\FactorySimV0.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\FactorySimV0.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\FactorySimV0Editor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.vsconfig" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\FactorySimV0">
+      <UniqueIdentifier>{BDB55462-8493-305E-9921-080E59E68522}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\FactorySimV0\FactorySimV0.Build.cs">
+      <Filter>Source\FactorySimV0</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\FactorySimV0\FactorySimV0.cpp">
+      <Filter>Source\FactorySimV0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\FactorySimV0\FactorySimV0.h">
+      <Filter>Source\FactorySimV0</Filter>
+    </ClCompile>
+    <Filter Include="Source\FactorySimV0\Private">
+      <UniqueIdentifier>{EC5664D9-1AA6-3E46-8F8B-BAE35557DED7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\FactorySimV0\Private\Player">
+      <UniqueIdentifier>{1B3A491F-34FF-309F-AE19-4858547C15EF}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\FactorySimV0\Private\Player\FactoryGameMode.cpp">
+      <Filter>Source\FactorySimV0\Private\Player</Filter>
+    </ClCompile>
+    <Filter Include="Source\FactorySimV0\Public">
+      <UniqueIdentifier>{13328E33-862E-37BD-8BD2-31ED5E5F8544}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\FactorySimV0\Public\Player">
+      <UniqueIdentifier>{CB395254-73A5-3230-BB03-74795198E7D5}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\FactorySimV0\Public\Player\FactoryGameMode.h">
+      <Filter>Source\FactorySimV0\Public\Player</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
