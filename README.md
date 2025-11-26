@@ -31,8 +31,8 @@ FactorySimV0 is built on a **milestone-based development plan**.
 This project is developed using a structured milestone plan.
 
 ## Milestone 0 — Core Player + Game Shell
-- [ ] New C++ UE5 project + Git setup  
-- [ ] Custom `FactoryGameMode`  
+- [x] New C++ UE5 project + Git setup  
+- [x] Custom `FactoryGameMode`  
 - [ ] Custom `FactoryPlayerController`  
 - [ ] Custom `FactoryCharacter`  
 - [ ] Basic HUD showing current mode  
@@ -49,7 +49,7 @@ This project is developed using a structured milestone plan.
 - [ ] Add InPort and OutPort components
 - [ ] Add InventoryComponent
 - [ ] Connect building placement to inventory/UI
-- [ ] 
+
 ## Milestone 3 — Conveyor Preview + Placement
 - [ ] ConveyorGhost actor (spline + instanced mesh)
 - [ ] Detect port snapping (input/output)
