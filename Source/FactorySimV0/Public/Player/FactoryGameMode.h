@@ -14,8 +14,8 @@ class FACTORYSIMV0_API AFactoryGameMode : public AGameModeBase
 {
 	GENERATED_BODY()
 
-//public:
-	//AFactoryGameMode();
+public:
+	AFactoryGameMode();
 	
 protected:
 	virtual void BeginPlay() override;

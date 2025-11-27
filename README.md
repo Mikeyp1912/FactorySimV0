@@ -39,7 +39,7 @@ This project is developed using a structured milestone plan.
 
 ## Milestone 1 — Grid + Simple Building Placement
 - [x] GridService (world <-> grid conversion)  
-- [ ] BuildingBase actor  
+- [x] BuildingBase actor  
 - [ ] PlacementComponent with state machine  
 - [ ] Ghost building actor  
 - [ ] Snapping to grid  
