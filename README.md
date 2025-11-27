@@ -38,7 +38,7 @@ This project is developed using a structured milestone plan.
 - [ ] Basic HUD showing current mode  
 
 ## Milestone 1 — Grid + Simple Building Placement
-- [ ] GridService (world <-> grid conversion)  
+- [x] GridService (world <-> grid conversion)  
 - [ ] BuildingBase actor  
 - [ ] PlacementComponent with state machine  
 - [ ] Ghost building actor  
