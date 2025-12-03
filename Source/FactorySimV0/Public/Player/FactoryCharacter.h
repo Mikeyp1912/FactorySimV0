@@ -1,10 +1,12 @@
 // Player/FactoryCharacter.h
-
 #pragma once
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "Components/PlacementComponent.h"
+
 #include "FactoryCharacter.generated.h"
+
 
 class UCameraComponent;
 class USpringArmComponent;
@@ -19,6 +21,8 @@ class FACTORYSIMV0_API AFactoryCharacter : public ACharacter
 
 public:
 	AFactoryCharacter();
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly) UPlacementComponent* Placement;
 
 protected:
 	virtual void BeginPlay() override;
@@ -38,6 +42,7 @@ protected:
 	UPROPERTY(EditDefaultsOnly, Category = "Input") UInputAction* IA_LookYaw;
 	UPROPERTY(EditDefaultsOnly, Category = "Input") UInputAction* IA_LookPitch;
 	UPROPERTY(EditDefaultsOnly, Category = "Input") UInputAction* IA_Jump;
+	UPROPERTY(EditDefaultsOnly, Category = "Input") UInputAction* IA_ToggleBuildMode;
 
 public:	
 	virtual void Tick(float DeltaTime) override;
@@ -47,4 +52,5 @@ public:
 	void LookYaw1D(const struct FInputActionValue& Value);
 	void LookPitch1D(const struct FInputActionValue& Value);
 	void JumpPressed(const struct FInputActionValue& Value);
+	void ToggleBuildModePressed(const struct FInputActionValue& Value);
 };

@@ -35,12 +35,12 @@ This project is developed using a structured milestone plan.
 - [x] Custom `FactoryGameMode`  
 - [x] Custom `FactoryPlayerController`  
 - [x] Custom `FactoryCharacter`  
-- [ ] Basic HUD showing current mode  
+- [x] Basic HUD showing current mode  
 
 ## Milestone 1 — Grid + Simple Building Placement
 - [x] GridService (world <-> grid conversion)  
 - [x] BuildingBase actor  
-- [ ] PlacementComponent with state machine  
+- [x] PlacementComponent with state machine  
 - [ ] Ghost building actor  
 - [ ] Snapping to grid  
 - [ ] Valid/Invalid placement (occupancy)  

@@ -11,6 +11,7 @@
 #include "InputActionValue.h"
 
 #include "Player/FactoryPlayerController.h"
+#include "Components/PlacementComponent.h"
 // Sets default values
 AFactoryCharacter::AFactoryCharacter()
 {
@@ -25,6 +26,8 @@ AFactoryCharacter::AFactoryCharacter()
 	Camera->SetupAttachment(SpringArm);
 	bUseControllerRotationYaw = true;
 	GetCharacterMovement()->bOrientRotationToMovement = false;
+
+	Placement = CreateDefaultSubobject<UPlacementComponent>(TEXT("PlacementComponent"));
 }
 
 // Called when the game starts or when spawned
@@ -62,6 +65,8 @@ void AFactoryCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 		if (IA_LookYaw)     EIC->BindAction(IA_LookYaw, ETriggerEvent::Triggered, this, &AFactoryCharacter::LookYaw1D);
 		if (IA_LookPitch)   EIC->BindAction(IA_LookPitch, ETriggerEvent::Triggered, this, &AFactoryCharacter::LookPitch1D);
 		if (IA_Jump)        EIC->BindAction(IA_Jump, ETriggerEvent::Started, this, &AFactoryCharacter::JumpPressed);
+
+		if (IA_ToggleBuildMode) EIC->BindAction(IA_ToggleBuildMode, ETriggerEvent::Started, this, &AFactoryCharacter::ToggleBuildModePressed);
 	}
 	else
 	{
@@ -92,4 +97,20 @@ void AFactoryCharacter::LookPitch1D(const FInputActionValue& Value)
 void AFactoryCharacter::JumpPressed(const FInputActionValue& Value)
 {
 	Jump();
+}
+
+void AFactoryCharacter::ToggleBuildModePressed(const FInputActionValue& Value)
+{
+	if (!Placement) return;
+
+	const EPlacementMode CurrentMode = Placement->GetPlacementMode();
+	if (CurrentMode == EPlacementMode::BuildingPreview)
+	{
+		Placement->SetPlacementMode(EPlacementMode::Idle);
+	}
+	else
+	{
+		Placement->SetPlacementMode(EPlacementMode::BuildingPreview);
+	}
+
 }
